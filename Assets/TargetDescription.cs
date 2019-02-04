@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class TargetDescription : MonoBehaviour
 {
-    public Transform canvas;
+    [SerializeField]
+    private Transform canvas;
+
+    [SerializeField]
+    private Transform noteBookText;
 
     void Update()
     {
         IsToggled();
     }
 
-    public void Pause()
+    public void OpenNotebook()
     {
         if (!canvas.gameObject.activeInHierarchy)
         {
             canvas.gameObject.SetActive(true);
+            noteBookText.gameObject.SetActive(false);
         }
 
         else if (canvas.gameObject.activeInHierarchy)
         {
             canvas.gameObject.SetActive(false);
+            noteBookText.gameObject.SetActive(true);
         }
     }
 
@@ -28,7 +34,7 @@ public class TargetDescription : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Pause();
+            OpenNotebook();
         }
     }
 }

@@ -208,6 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 932792594}
+  noteBookText: {fileID: 1250641662}
 --- !u!1 &336752743
 GameObject:
   m_ObjectHideFlags: 0
