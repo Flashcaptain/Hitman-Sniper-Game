@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: o3n_male_undies_02_overlay
+  m_EditorClassIdentifier: 
+  overlayName: o3n_male_undies_02_overlay
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 918
+    width: 2048
+    height: 512
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: c6a671c3d21688e428e5f0c43c8e4e2a, type: 3}
+  - {fileID: 2800000, guid: ef3507d5f53a01041b62ab14444174b0, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2800000, guid: 5311db5d769bf1b48be227ceff60d29c, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: 708e9a6985fff9a4f94e0720553a914f, type: 2}
+  OcclusionEntries: []

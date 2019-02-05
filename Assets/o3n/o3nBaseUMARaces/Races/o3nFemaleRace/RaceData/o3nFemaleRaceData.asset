@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d33591a744673429e1681df5574ac0, type: 3}
+  m_Name: o3nFemaleRaceData
+  m_EditorClassIdentifier: 
+  baseRaceRecipe: {fileID: 11400000, guid: 2dbca5724ffdb1840923a56666d2fa0f, type: 2}
+  wardrobeSlots:
+  - None
+  - HeadVariant
+  - HandVariant
+  - Body
+  - Face
+  - AlternateEyes
+  - Hair
+  - Complexion
+  - MakeupFace
+  - MakeupEyes
+  - MakeupMouth
+  - BodyHair
+  - Eyebrows
+  - Beard
+  - UnderwearTop
+  - UnderwearBottom
+  - UnderwearLegs
+  - Ears
+  - Helmet
+  - Shoulders
+  - Chest
+  - Chest2
+  - Arms
+  - Hands
+  - Waist
+  - Legs
+  - Feet
+  - OverClothing
+  backwardsCompatibleWith: []
+  _crossCompatibilitySettings:
+    settingsData: []
+  raceThumbnails:
+    fullThumb: {fileID: 21300000, guid: 83ba8246fb86bf2448a5bab117550317, type: 3}
+    faceThumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    wardrobeSlotThumbs:
+    - thumbIsFor: HeadVariant
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: HandVariant
+      thumb: {fileID: 21300000, guid: 0eeaca58472f0df408ccced3ee50c723, type: 3}
+    - thumbIsFor: Body
+      thumb: {fileID: 21300000, guid: c972a57b10c7ca342b713f780dbc63dc, type: 3}
+    - thumbIsFor: Face
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: AlternateEyes
+      thumb: {fileID: 21300000, guid: 7883e2b041e85ca4eb25c02d7a14c690, type: 3}
+    - thumbIsFor: Hair
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: Complexion
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: MakeupFace
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: MakeupEyes
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: MakeupMouth
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: BodyHair
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: Eyebrows
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: Beard
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: UnderwearTop
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: UnderwearBottom
+      thumb: {fileID: 21300000, guid: 2f9c3b08415a0614a88ca51462e14935, type: 3}
+    - thumbIsFor: UnderwearLegs
+      thumb: {fileID: 21300000, guid: 2f9c3b08415a0614a88ca51462e14935, type: 3}
+    - thumbIsFor: Ears
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: Helmet
+      thumb: {fileID: 21300000, guid: 4fcf0a882048c214e848b61da6788540, type: 3}
+    - thumbIsFor: Shoulders
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: Chest
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: Arms
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: Hands
+      thumb: {fileID: 21300000, guid: 0eeaca58472f0df408ccced3ee50c723, type: 3}
+    - thumbIsFor: Waist
+      thumb: {fileID: 21300000, guid: 7caaab891ccd0034fb8ef659549bd7d7, type: 3}
+    - thumbIsFor: Legs
+      thumb: {fileID: 21300000, guid: 2f9c3b08415a0614a88ca51462e14935, type: 3}
+    - thumbIsFor: Feet
+      thumb: {fileID: 21300000, guid: a4898ee123a090247a94104678904944, type: 3}
+  raceName: o3n Female
+  dnaConverterList:
+  - {fileID: 11498548, guid: 35b80ad91b2f295469f54ae6369e49b1, type: 2}
+  TPose: {fileID: 11400000, guid: f68f151a08b85104aaa7e1821622ed28, type: 2}
+  umaTarget: 0
+  genericRootMotionTransformName: Global
+  expressionSet: {fileID: 11400000, guid: 26cf611594c60e047830f2414bdd1a04, type: 2}
+  dnaRanges:
+  - {fileID: 11400000, guid: c47645dc6f655734d9ca392a202ca7b5, type: 2}
+  raceHeight: 2
+  raceRadius: 0.25
+  raceMass: 50
