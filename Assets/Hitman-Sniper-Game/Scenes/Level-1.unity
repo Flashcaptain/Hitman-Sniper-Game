@@ -258,6 +258,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 205743201}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: noteBookText
+      value: 
+      objectReference: {fileID: 768754416}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: descriptionText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1358782617}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: descriptionText.Array.data[1]
+      value: 
+      objectReference: {fileID: 638801584}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: descriptionText.Array.data[2]
+      value: 
+      objectReference: {fileID: 103179658}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: descriptionText.Array.data[3]
+      value: 
+      objectReference: {fileID: 448605506}
+    - target: {fileID: 1774725808, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
+      propertyPath: descriptionText.Array.data[4]
+      value: 
+      objectReference: {fileID: 607509016}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0008b62be2a277d438f53e3a9f49006a, type: 3}
 --- !u!1 &103179656

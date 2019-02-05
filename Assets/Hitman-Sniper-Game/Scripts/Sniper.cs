@@ -124,7 +124,6 @@ public class Sniper : MonoBehaviour
         if (_isZoomed)
         {
             _camera.transform.position = transform.position;
-            Debug.Log("test");
             _animatorSniperRifle.SetTrigger(_ZoomOutTrigger);
             _animator.SetTrigger(_ZoomOutTrigger);
             _isZoomed = false;
