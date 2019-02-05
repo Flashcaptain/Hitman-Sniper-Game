@@ -35,6 +35,9 @@ public class Sniper : MonoBehaviour
     private Animator _animator;
 
     [SerializeField]
+    private Animator _animatorSniperRifle;
+
+    [SerializeField]
     private GameObject _camera;
 
     [SerializeField]
@@ -121,6 +124,8 @@ public class Sniper : MonoBehaviour
         if (_isZoomed)
         {
             _camera.transform.position = transform.position;
+            Debug.Log("test");
+            _animatorSniperRifle.SetTrigger(_ZoomOutTrigger);
             _animator.SetTrigger(_ZoomOutTrigger);
             _isZoomed = false;
             _scope.SetActive(false);
@@ -129,6 +134,7 @@ public class Sniper : MonoBehaviour
         else
         {
             _camera.transform.Translate(0, 0, _zoomRange);
+            _animatorSniperRifle.SetTrigger(_ZoomInTrigger);
             _animator.SetTrigger(_ZoomInTrigger);
             _isZoomed = true;
             _scope.SetActive(true);
