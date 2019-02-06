@@ -1212,7 +1212,7 @@ RectTransform:
   m_Children:
   - {fileID: 349826540}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1339,6 +1339,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &134569804
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134569802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.42336115
+  m_Height: 3.870603
+  m_Direction: 1
+  m_Center: {x: 0.009158137, y: 1.4353013, z: -0.028443106}
 --- !u!4 &134569805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884,
@@ -1696,6 +1710,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &170919694
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170919692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.38294354
+  m_Height: 3.892029
+  m_Direction: 1
+  m_Center: {x: 0.0053711203, y: 1.4460142, z: -0.017276822}
 --- !u!4 &170919695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884,
@@ -3368,7 +3396,7 @@ RectTransform:
   m_Children:
   - {fileID: 1251719325}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4957,6 +4985,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &486222318
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486222316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.469713
+  m_Height: 4.209383
+  m_Direction: 1
+  m_Center: {x: 0.01972033, y: 1.6046913, z: 0.016577242}
 --- !u!4 &486222319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: ff40eba2f5bc4ec4aa03181215edfab6,
@@ -6030,6 +6072,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &661617830
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661617828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45145124
+  m_Height: 3.9601922
+  m_Direction: 1
+  m_Center: {x: -0.011469418, y: 1.4800973, z: -0.04090933}
 --- !u!4 &661617831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400144, guid: 780b4b7533a1cca49ab92edfc06a1bd1,
@@ -8144,7 +8200,7 @@ Transform:
   - {fileID: 378813106}
   - {fileID: 665848580}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108419160
 PrefabInstance:
@@ -8439,6 +8495,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1163381015
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163381013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3776616
+  m_Height: 3.91143
+  m_Direction: 1
+  m_Center: {x: -0.008738639, y: 1.4557147, z: -0.039030913}
 --- !u!4 &1163381016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400146, guid: abcc2b4087a568449b135a1e9cbd6b3c,
@@ -10106,6 +10176,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1360714839
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360714836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5489699
+  m_Height: 4.288378
+  m_Direction: 1
+  m_Center: {x: -0.0056663617, y: 1.6441894, z: 0.087606974}
 --- !u!4 &1360714840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee,
@@ -11085,6 +11169,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1485406435
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485406433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45818493
+  m_Height: 4.209383
+  m_Direction: 1
+  m_Center: {x: 0.015846783, y: 1.6046913, z: 0.08760698}
 --- !u!4 &1485406436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: ff40eba2f5bc4ec4aa03181215edfab6,
@@ -12580,6 +12678,20 @@ MonoBehaviour:
   - The target has brown hair.
   - The target is talking to someone.
   - The target wears white shoes.
+--- !u!136 &1587216562
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587216559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.42066073
+  m_Height: 4.2766657
+  m_Direction: 1
+  m_Center: {x: -0.003027021, y: 1.6383326, z: 0.087607004}
 --- !u!4 &1587216563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee,
@@ -13177,6 +13289,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1672789053
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672789051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5233267
+  m_Height: 3.9337142
+  m_Direction: 1
+  m_Center: {x: 0.019976892, y: 1.4668591, z: 0.087607004}
 --- !u!4 &1672789054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400144, guid: 780b4b7533a1cca49ab92edfc06a1bd1,
@@ -13834,6 +13960,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1710327779
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710327777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5489699
+  m_Height: 4.209383
+  m_Direction: 1
+  m_Center: {x: -0.0056663645, y: 1.6046913, z: 0.08760698}
 --- !u!4 &1710327780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: 186cc39c17d8bc14b8001658342a1391,
@@ -13876,6 +14016,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1719315834
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719315831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5489699
+  m_Height: 3.9426882
+  m_Direction: 1
+  m_Center: {x: -0.0056663645, y: 1.471349, z: 0.087607}
 --- !u!4 &1719315835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400146, guid: abcc2b4087a568449b135a1e9cbd6b3c,
@@ -13904,6 +14058,20 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1719897866
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719897864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.43200883
+  m_Height: 4.209383
+  m_Direction: 1
+  m_Center: {x: 0.0039920188, y: 1.6046913, z: 0.009680732}
 --- !u!4 &1719897867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: 186cc39c17d8bc14b8001658342a1391,
