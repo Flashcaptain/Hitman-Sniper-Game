@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Sniper : MonoBehaviour
 {
@@ -45,9 +46,11 @@ public class Sniper : MonoBehaviour
 
     [SerializeField]
     private float _fireCooldown;
-
+    
     [SerializeField]
     private float _holdBreathCooldown;
+
+    public Slider _breathSlider;
 
     private float _cameraSpeed;
     private float _holdBreathCooldownMax;
@@ -59,6 +62,7 @@ public class Sniper : MonoBehaviour
 
     void Start()
     {
+        _breathSlider.value = _holdBreathCooldown;
         _holdBreathCooldownMax = _holdBreathCooldown;
         _cameraSpeed = _zoomOutSpeed;
         Cursor.lockState = CursorLockMode.Locked;
@@ -156,6 +160,7 @@ public class Sniper : MonoBehaviour
         {
             yield return new WaitForSeconds(0.1f);
             _holdBreathCooldown -= 0.1f;
+            _breathSlider.value = _holdBreathCooldown;
         }
         _isHoldingBreath = false;
         StartCoroutine(ReleasingBreath());
@@ -168,6 +173,7 @@ public class Sniper : MonoBehaviour
         {
             yield return new WaitForSeconds(0.1f);
             _holdBreathCooldown += 0.1f;
+            _breathSlider.value = _holdBreathCooldown;
         }
         _holdBreathCooldown = _holdBreathCooldownMax;
     }
