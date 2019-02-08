@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5258324, g: 0.5332571, b: 0.5481692, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2617,7 +2617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.91
+      value: 13.79
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2625,7 +2625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.6840405
+      value: -5.4408264
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2633,7 +2633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.92767316
+      value: 0.98099655
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2641,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.37339336
+      value: -0.19402532
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_RootOrder
@@ -2653,7 +2653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 136.15001
+      value: 202.37599
       objectReference: {fileID: 0}
     - target: {fileID: 400146, guid: 9b63d7e018876334cac6b7baaef0e884, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2995,6 +2995,24 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &303573965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303573962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8b6fb72af65ff4d88d3d2104e33f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTarget: 0
+  targetDescriptions:
+  - The target is wearing an orange top.
+  - The target is caucasian.
+  - 'The target is wearing a hat. '
+  - The target looks tired.
 --- !u!1001 &327552407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4142,6 +4160,7 @@ MonoBehaviour:
   Targets:
   - {fileID: 1582773312}
   - {fileID: 1503945941}
+  - {fileID: 303573965}
 --- !u!4 &542859754
 Transform:
   m_ObjectHideFlags: 0
@@ -14309,7 +14328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.285
+      value: 10.2
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14317,7 +14336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.518
+      value: -6.87
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: d30d5aeac98798d46901ee873ca2efee, type: 3}
       propertyPath: m_LocalRotation.x
