@@ -39,14 +39,17 @@ public class Sniper : MonoBehaviour
     private Animator _animatorSniperRifle;
 
     [SerializeField]
-    private GameObject _camera;
+    private Camera _camera;
 
     [SerializeField]
     private GameObject _scope;
 
     [SerializeField]
+    private GameObject _sniper;
+
+    [SerializeField]
     private float _fireCooldown;
-    
+
     [SerializeField]
     private float _holdBreathCooldown;
 
@@ -58,10 +61,14 @@ public class Sniper : MonoBehaviour
     private bool _isHoldingBreath = false;
     private bool _canFire = true;
     private Vector2 _rotation = new Vector2(0, 0);
+    private float _defaultZoom;
+    private float rotX;
+    private float rotY;
 
 
     void Start()
     {
+        _defaultZoom = _camera.fieldOfView;
         _breathSlider.value = _holdBreathCooldown;
         _holdBreathCooldownMax = _holdBreathCooldown;
         _cameraSpeed = _zoomOutSpeed;
@@ -94,10 +101,12 @@ public class Sniper : MonoBehaviour
         {
             _isHoldingBreath = false;
         }
+        _rotation.y += Input.GetAxis("Mouse X") * _cameraSpeed;
+        _rotation.y = Mathf.Clamp(_rotation.y, -45 , 45);
+        _rotation.x += -Input.GetAxis("Mouse Y") * _cameraSpeed;
+        _rotation.x = Mathf.Clamp(_rotation.x, -90 , 80);
+        transform.eulerAngles = (Vector2)_rotation;
 
-        _rotation.y += Input.GetAxis("Mouse X");
-        _rotation.x += -Input.GetAxis("Mouse Y");
-        transform.eulerAngles = (Vector2)_rotation * _cameraSpeed;
     }
     void ResetTriggers()
     {
@@ -127,20 +136,22 @@ public class Sniper : MonoBehaviour
     {
         if (_isZoomed)
         {
-            _camera.transform.position = transform.position;
+            _camera.fieldOfView = _defaultZoom;
             _animatorSniperRifle.SetTrigger(_ZoomOutTrigger);
             _animator.SetTrigger(_ZoomOutTrigger);
             _isZoomed = false;
             _scope.SetActive(false);
+            _sniper.SetActive(true);
             _cameraSpeed = _zoomOutSpeed;
         }
         else
         {
-            _camera.transform.Translate(0, 0, _zoomRange);
+            _camera.fieldOfView = _zoomRange;
             _animatorSniperRifle.SetTrigger(_ZoomInTrigger);
             _animator.SetTrigger(_ZoomInTrigger);
             _isZoomed = true;
             _scope.SetActive(true);
+            _sniper.SetActive(false);
             _cameraSpeed = _zoomInSpeed;
         }
     }
@@ -175,6 +186,5 @@ public class Sniper : MonoBehaviour
             _holdBreathCooldown += 0.1f;
             _breathSlider.value = _holdBreathCooldown;
         }
-        _holdBreathCooldown = _holdBreathCooldownMax;
     }
 }
