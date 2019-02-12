@@ -53,6 +53,18 @@ public class Sniper : MonoBehaviour
     [SerializeField]
     private float _holdBreathCooldown;
 
+    [SerializeField]
+    private AudioSource _shotSound;
+
+    [SerializeField]
+    private AudioSource _scopeSound;
+
+    [SerializeField]
+    private AudioSource _inhaleSound;
+
+    [SerializeField]
+    private AudioSource _exhaleSound;
+
     public Slider _breathSlider;
 
     private float _cameraSpeed;
@@ -117,7 +129,7 @@ public class Sniper : MonoBehaviour
         _animator.ResetTrigger(_ZoomOutTrigger);
     }
 
-        void Fire()
+    void Fire()
     {
         Ray ray = new Ray(_camera.transform.position, transform.forward);
         RaycastHit hit;
@@ -125,6 +137,7 @@ public class Sniper : MonoBehaviour
         if (Physics.Raycast(ray, out hit, _range))
         {
             Debug.Log(hit);
+            _shotSound.Play();
             NPCBehaviour NPC = hit.collider.gameObject.GetComponent<NPCBehaviour>();
             if (NPC != null)
             {
@@ -143,6 +156,7 @@ public class Sniper : MonoBehaviour
             _scope.SetActive(false);
             _sniper.SetActive(true);
             _cameraSpeed = _zoomOutSpeed;
+            _scopeSound.Play();
         }
         else
         {
@@ -153,6 +167,7 @@ public class Sniper : MonoBehaviour
             _scope.SetActive(true);
             _sniper.SetActive(false);
             _cameraSpeed = _zoomInSpeed;
+            _scopeSound.Play();
         }
     }
 
@@ -166,6 +181,7 @@ public class Sniper : MonoBehaviour
 
     private IEnumerator HoldingBreath()
     {
+        _inhaleSound.Play();
         _animator.SetTrigger(_holdBreathTrigger);
         while (_isHoldingBreath && _isZoomed && _canFire && _holdBreathCooldown > 0)
         {
@@ -179,6 +195,7 @@ public class Sniper : MonoBehaviour
 
     private IEnumerator ReleasingBreath()
     {
+        _exhaleSound.Play();
         _animator.SetTrigger(_releaseBreathTrigger);
         while (!_isHoldingBreath && _holdBreathCooldown < _holdBreathCooldownMax)
         {
