@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Hitman-Sniper-Game/Scenes/Level-1.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Hitman-Sniper-Game/Scenes/MainMenu.unity
     guid: b530ef6dcae6bde4a8946e2fc642c32e
   - enabled: 1
-    path: Assets/Hitman-Sniper-Game/Scenes/GameOver.unity
-    guid: 30ce32b130f74c5418185a9e3bd946d6
+    path: Assets/Hitman-Sniper-Game/Scenes/Level-1.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

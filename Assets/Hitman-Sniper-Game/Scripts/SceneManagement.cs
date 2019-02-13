@@ -10,6 +10,9 @@ public class SceneManagement : MonoBehaviour
     private GameObject _textHolder;
 
     [SerializeField]
+    private GameObject _nextlevelButton;
+
+    [SerializeField]
     private GameObject _canvas;
 
     [SerializeField]
@@ -31,14 +34,13 @@ public class SceneManagement : MonoBehaviour
     private Text _textSpace;
 
     private int _points;
-    private bool _Finnished;
+    private bool _Finished;
     private bool _withinTimer = true;
     private bool _shotInnocent;
 
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        StartLevel();
     }
 
     public void StartGame(int scene)
@@ -52,15 +54,29 @@ public class SceneManagement : MonoBehaviour
         Application.Quit();
     }
 
+    public void RestartGame()
+    {
+        StartLevel();
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void NextGame(int scene)
+    {
+        StartLevel();
+        SceneManager.LoadScene(scene);
+    }
+
     public void VictoryGame()
     {
-        if (!_Finnished)
+        if (!_Finished)
         {
-            _Finnished = true;
-            Debug.Log("Win");
+            Time.timeScale = 0.2f;
+            Cursor.lockState = CursorLockMode.None;
+            _Finished = true;
             _victory.SetActive(true);
             _canvas.SetActive(true);
             StartCoroutine(Stars());
+            _nextlevelButton.SetActive(true);
             if (_withinTimer)
             {
                 AddText("You shot the target within " + _StarTimer + " seconds +1 Star");
@@ -75,7 +91,7 @@ public class SceneManagement : MonoBehaviour
 
     public void DefeatGame()
     {
-        if (!_Finnished)
+        if (!_Finished)
         {
             if (!_shotInnocent)
             {
@@ -86,7 +102,8 @@ public class SceneManagement : MonoBehaviour
             }
             else
             {
-                _Finnished = true;
+                Cursor.lockState = CursorLockMode.None;
+                _Finished = true;
                 AddText("You have shot another innocent you lost");
                 _defeat.SetActive(true);
                 _canvas.SetActive(true);
@@ -97,11 +114,13 @@ public class SceneManagement : MonoBehaviour
 
     private void StartLevel()
     {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
         _withinTimer = true;
         _shotInnocent = false;
-        Time.timeScale = 1;
-        _Finnished = false;
+        _Finished = false;
         _points = _stars.Count;
+        _nextlevelButton.SetActive(false);
         _defeat.SetActive(false);
         _victory.SetActive(false);
         _canvas.SetActive(false);
@@ -122,7 +141,7 @@ public class SceneManagement : MonoBehaviour
     {
         for (int i = 0; i < _points; i++)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             _stars[i].SetActive(true);
         }
     }
@@ -130,7 +149,7 @@ public class SceneManagement : MonoBehaviour
     private IEnumerator StarTimer()
     {
         yield return new WaitForSeconds(_StarTimer);
-        if (!_Finnished)
+        if (!_Finished)
         {
             _withinTimer = false;
             AddText("Did not shot the target within " + _StarTimer + " seconds no Star");
@@ -141,9 +160,10 @@ public class SceneManagement : MonoBehaviour
     private IEnumerator DefeatTimer()
     {
         yield return new WaitForSeconds(_DefeatTimer);
-        if (!_Finnished)
+        if (!_Finished)
         {
-            _Finnished = true;
+            Cursor.lockState = CursorLockMode.None;
+            _Finished = true;
             AddText("Did not shoot the target within " + _DefeatTimer + " seconds after being spotted");
             AddText("You have failed the mission no stars");
             _defeat.SetActive(true);

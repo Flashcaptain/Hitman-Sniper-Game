@@ -84,7 +84,6 @@ public class Sniper : MonoBehaviour
         _breathSlider.value = _holdBreathCooldown;
         _holdBreathCooldownMax = _holdBreathCooldown;
         _cameraSpeed = _zoomOutSpeed;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
