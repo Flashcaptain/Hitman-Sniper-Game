@@ -4,19 +4,35 @@ using UnityEngine;
 
 public class NPCBehaviour : MonoBehaviour
 {
-    public bool isTarget = false;
+    [SerializeField]
+    private GameObject _ragdoll;
 
+    [SerializeField]
+    private float _knockback = 1;
+
+    public bool isTarget = false;
     public List<string> targetDescriptions;
 
-    public void OnHit()
+    public void OnHit(RaycastHit hit, Ray ray)
     {
+
+        GameObject sceneManagement = GameObject.Find("SceneManagement");
+
         if (isTarget)
         {
-            Debug.Log("VICTORY!!!!!!!!!!!!!");
+            sceneManagement.GetComponent<SceneManagement>().VictoryGame();
         }
         else
         {
-            Debug.Log("U HIT AN INNOCENT!!!!!!!!!!!!!");
+            sceneManagement.GetComponent<SceneManagement>().DefeatGame();
+        }
+
+        if (_ragdoll != null)
+        {
+            _knockback *= 10000;
+            GameObject ragdoll = Instantiate(_ragdoll, transform.position, transform.rotation);
+            ragdoll.GetComponentInChildren<Rigidbody>().AddForceAtPosition(ray.direction * _knockback, hit.point);
+            Destroy(this.gameObject);
         }
     }
 }

@@ -131,17 +131,20 @@ public class Sniper : MonoBehaviour
 
     void Fire()
     {
-        Ray ray = new Ray(_camera.transform.position, transform.forward);
+        Ray ray = new Ray(_camera.transform.position, _camera.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, _range))
         {
-            Debug.Log(hit);
             _shotSound.Play();
             NPCBehaviour NPC = hit.collider.gameObject.GetComponent<NPCBehaviour>();
             if (NPC != null)
             {
-                NPC.OnHit();
+                NPC.OnHit(hit, ray);
+            }
+            else if (hit.collider.gameObject.layer == 11)
+            {
+                Destroy(hit.collider.gameObject);
             }
         }
     }
