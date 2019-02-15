@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 760, y: 99.91998}
+  m_AnchoredPosition: {x: 0, y: 99.91998}
   m_SizeDelta: {x: 138, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &753161644
@@ -244,8 +244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 319}
-  m_SizeDelta: {x: -1047.7, y: -985.5}
+  m_AnchoredPosition: {x: -5, y: 210}
+  m_SizeDelta: {x: -10, y: 380}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7891672173689331321
 CanvasRenderer:
@@ -288,9 +288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mission Failed
-
-'
+  m_Text: Mission Failed
 --- !u!1 &3462845461417937877
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +323,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 319}
-  m_SizeDelta: {x: -1047.7, y: -985.5}
+  m_AnchoredPosition: {x: -5, y: 210}
+  m_SizeDelta: {x: -10, y: 380}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3932842475933174529
 CanvasRenderer:
@@ -487,7 +485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 760, y: 159.08}
+  m_AnchoredPosition: {x: 0, y: 159.08}
   m_SizeDelta: {x: 138, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7474492693928375503
@@ -614,7 +612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 730, y: -164}
+  m_AnchoredPosition: {x: 0, y: -164}
   m_SizeDelta: {x: 422.3, y: 336.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6653509290300138061
@@ -644,7 +642,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -666,7 +664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8526592214688037191
 RectTransform:
   m_ObjectHideFlags: 0
