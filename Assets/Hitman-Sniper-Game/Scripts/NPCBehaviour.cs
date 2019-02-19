@@ -8,6 +8,9 @@ public class NPCBehaviour : MonoBehaviour
     private GameObject _ragdoll;
 
     [SerializeField]
+    private ParticleSystem _bloodEffect;
+
+    [SerializeField]
     private float _knockback = 1;
 
     public bool isTarget = false;
@@ -33,6 +36,8 @@ public class NPCBehaviour : MonoBehaviour
             GameObject ragdoll = Instantiate(_ragdoll, transform.position, transform.rotation);
             ragdoll.GetComponentInChildren<Rigidbody>().AddForceAtPosition(ray.direction * _knockback, hit.point);
             Destroy(this.gameObject);
+
+            ParticleSystem blood = Instantiate(_bloodEffect, transform.position, transform.rotation);
         }
     }
 }
